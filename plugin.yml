@@ -1,0 +1,7 @@
+name: DisableCMDS
+version: 1.0.0
+author: TheDragonRing
+api:
+- 1.0.0
+- 2.0.0
+main: DisableCMDS\Main
