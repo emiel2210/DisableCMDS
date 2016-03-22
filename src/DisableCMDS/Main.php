@@ -29,7 +29,7 @@
 
       @mkdir($this->dataPath());
 
-      $this->cfg = new Config($this->dataPath() . "config.yml", Config::YAML, array("banned_cmds" => array(), "banned_cmd_message" => ""));
+      $this->cfg = new Config($this->dataPath() . "config.yml", Config::YAML, array("banned_cmds" => array()), "banned_cmd_message" => ""));
 
     }
 
