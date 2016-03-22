@@ -47,7 +47,12 @@
       if(in_array($command[0], $banned_cmds))
       {
 
-        $player->sendMessage($banned_cmd_message);
+        if(!($player->hasPermission("disablecmds.bypass")))
+        {
+
+          $player->sendMessage($banned_cmd_message);
+
+        }
 
       }
 
