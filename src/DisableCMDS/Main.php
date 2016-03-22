@@ -40,7 +40,7 @@
 
       $player = $event->getPlayer();
 
-      $allowed_cmds = $this->cfg->get("banned_cmds");
+      $allowed_cmds = $this->cfg->get("allowed_cmds");
 
       $banned_cmd_message = $this->cfg->get("banned_cmd_message");
 
