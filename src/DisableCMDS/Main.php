@@ -45,6 +45,7 @@
       $banned_cmd_message = $this->cfg->get("banned_cmd_message");
 
       if(!(in_array($command[0], $allowed_cmds)))
+      {
 
         if(!($player->hasPermission("disablecmds.bypass")))
         {
