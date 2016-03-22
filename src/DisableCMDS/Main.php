@@ -29,7 +29,7 @@
 
       @mkdir($this->dataPath());
 
-      $this->cfg = new Config($this->dataPath() . "config.yml", Config::YAML, array("banned_cmds" => array()));
+      $this->cfg = new Config($this->dataPath() . "config.yml", Config::YAML, array("banned_cmds" => array(), "banned_cmd_message" => ""));
 
     }
 
@@ -38,7 +38,18 @@
 
       $command = explode(" ", strtolower($event->getMessage()));
 
+      $player = $event->getPlayer();
+
       $banned_cmds = $this->cfg->get("banned_cmds");
+
+      $banned_cmd_message = $this->cfg->get("banned_cmd_message");
+
+      if(in_array($command[0], $banned_cmds))
+      {
+
+        $player->sendMessage($banned_cmd_message);
+
+      }
 
     }
 
