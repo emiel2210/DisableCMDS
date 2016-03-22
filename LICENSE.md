@@ -7,4 +7,4 @@ TheDragonRing's Software License v1
 
 3. Contributing will be overseen and approved or disapproved by me.
 
-NOTE: For redistribution to be allowed, thus overriding statement one, you must have acquired my clear approval and then follow the terms and condition I will provide.
+NOTE: For redistribution to be allowed, thus overriding statement one, you must have acquired my clear approval and then follow the terms and conditions I will provide.
